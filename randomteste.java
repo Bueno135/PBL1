@@ -1,5 +1,9 @@
-//Crie um programa em Python que implementa uma função que retorna uma lista preenchida com valores inteiros aleatórios. 
-//A função deve receber como parâmetro o tamanho da lista. O tamanho deve ser informado pelo usuário via input.
+/*Crie um programa em Python que implementa uma função que retorna uma lista preenchida com valores inteiros aleatórios.
+ A função deve receber como parâmetro o tamanho da lista. O tamanho deve ser informado pelo usuário via input.
+Para cada número da lista, imprima:
+1- Se o número é múltiplo de 3
+2- Se o número é par
+3- Se o número é ímpar*/
 
 import java.util.Random;
 import java.util.Scanner;
@@ -23,9 +27,9 @@ public class randomteste {
             System.out.println(num);
             if (num % 2 == 0){
                 System.out.println(" é Par");
-            }if (num % 2 != 0) {
+            }else if (num % 2 != 0) {
                 System.out.println(" é Impar");
-            }if (num % 3 == 0) {
+            }else if (num % 3 == 0) {
                 System.out.println(" é Multiplo de 3");
             }   
             System.out.println();
