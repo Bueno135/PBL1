@@ -4,10 +4,13 @@ import random
 
 tam = int(input("Digite qual será o tamanho da lista: "))
 lista = []
-for i in range(tam):
-    num = random.randint(0, 100)
-    lista.append(num)
+def criarlista(tam):
+    for i in range(tam):
+        lista.append(random.randint(1, 100))
     
+    return lista
+
+lista = criarlista(tam)
 print("Os números gerados foram: ", lista)
 
 print("-------- Resultado --------")
@@ -18,6 +21,3 @@ for numero in lista:
         print(numero, " - o número é par")
     elif numero % 2 != 0:
         print(numero, " - o número é impar")
-
-
-
